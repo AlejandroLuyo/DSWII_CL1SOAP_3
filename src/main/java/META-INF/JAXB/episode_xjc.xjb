@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.06.08 a las 02:08:55 PM COT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.cibertec.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="~tns:PrestamoRequest">
+      <class ref="pe.cibertec.ws.objects.PrestamoRequest"/>
+    </bindings>
+    <bindings scd="~tns:PrestamoResponse">
+      <class ref="pe.cibertec.ws.objects.PrestamoResponse"/>
+    </bindings>
+    <bindings scd="~tns:VocalRequest">
+      <class ref="pe.cibertec.ws.objects.VocalRequest"/>
+    </bindings>
+    <bindings scd="~tns:VocalResponse">
+      <class ref="pe.cibertec.ws.objects.VocalResponse"/>
+    </bindings>
+    <bindings scd="~tns:CuboYCuartaRequest">
+      <class ref="pe.cibertec.ws.objects.CuboYCuartaRequest"/>
+    </bindings>
+    <bindings scd="~tns:CuboYCuartaResponse">
+      <class ref="pe.cibertec.ws.objects.CuboYCuartaResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescuentoRequest">
+      <class ref="pe.cibertec.ws.objects.DescuentoRequest"/>
+    </bindings>
+    <bindings scd="~tns:DescuentoResponse">
+      <class ref="pe.cibertec.ws.objects.DescuentoResponse"/>
+    </bindings>
+    <bindings scd="~tns:BisiestoRequest">
+      <class ref="pe.cibertec.ws.objects.BisiestoRequest"/>
+    </bindings>
+    <bindings scd="~tns:BisiestoResponse">
+      <class ref="pe.cibertec.ws.objects.BisiestoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

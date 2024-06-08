@@ -69,7 +69,7 @@
 				</executions>
 				<configuration>
 					<sources>
-						<source>${project.basedir}/src/main/resources/xsd/Pregunta2.xsd</source>
+						<source>${project.basedir}/src/main/resources/xsd/prestamo.xsd</source>
 					</sources>
 					<outputDirectory>src/main/java</outputDirectory>
 					<clearOutputDir>false</clearOutputDir>
