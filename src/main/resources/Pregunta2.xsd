@@ -1,0 +1,71 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.pe/ws/objects"
+           targetNamespace="http://www.cibertec.pe/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="PrestamoRequest">
+        <xs:sequence>
+            <xs:element name="monto" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PrestamoResponse">
+        <xs:sequence>
+            <xs:element name="monto" type="xs:double"/>
+            <xs:element name="cuotas" type="xs:int"/>
+            <xs:element name="montoCuota" type="xs:double"/>
+            <xs:element name="interes" type="xs:double"/>
+            <xs:element name="deudaTotal" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="VocalRequest">
+        <xs:sequence>
+            <xs:element name="numero" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="VocalResponse">
+        <xs:sequence>
+            <xs:element name="vocal" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CuboYCuartaRequest">
+        <xs:sequence>
+            <xs:element name="limite" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CuboYCuartaResponse">
+        <xs:sequence>
+            <xs:element name="resultado" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DescuentoRequest">
+        <xs:sequence>
+            <xs:element name="cantidad" type="xs:int"/>
+            <xs:element name="precioUnitario" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DescuentoResponse">
+        <xs:sequence>
+            <xs:element name="totalPagar" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BisiestoRequest">
+        <xs:sequence>
+            <xs:element name="anio" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BisiestoResponse">
+        <xs:sequence>
+            <xs:element name="esBisiesto" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
