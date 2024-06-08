@@ -24,7 +24,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="monto" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="precioUnitario" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="cantidad" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,27 +36,45 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "monto"
+    "precioUnitario",
+    "cantidad"
 })
-@XmlRootElement(name = "PrestamoRequest")
-public class PrestamoRequest {
+@XmlRootElement(name = "CompraRequest")
+public class CompraRequest {
 
-    protected double monto;
+    protected double precioUnitario;
+    protected int cantidad;
 
     /**
-     * Obtiene el valor de la propiedad monto.
+     * Obtiene el valor de la propiedad precioUnitario.
      * 
      */
-    public double getMonto() {
-        return monto;
+    public double getPrecioUnitario() {
+        return precioUnitario;
     }
 
     /**
-     * Define el valor de la propiedad monto.
+     * Define el valor de la propiedad precioUnitario.
      * 
      */
-    public void setMonto(double value) {
-        this.monto = value;
+    public void setPrecioUnitario(double value) {
+        this.precioUnitario = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad cantidad.
+     * 
+     */
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    /**
+     * Define el valor de la propiedad cantidad.
+     * 
+     */
+    public void setCantidad(int value) {
+        this.cantidad = value;
     }
 
 }

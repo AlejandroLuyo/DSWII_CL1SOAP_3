@@ -1,0 +1,32 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.alejandro-luyo.com/ws/objects"
+           targetNamespace="http://www.alejandro-luyo.com/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="Compra">
+        <xs:sequence>
+            <xs:element name="precioUnitario" type="xs:double"/>
+            <xs:element name="cantidad" type="xs:int"/>
+            <xs:element name="descuento" type="xs:double"/>
+            <xs:element name="totalPagar" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="CompraRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="precioUnitario" type="xs:double"/>
+                <xs:element name="cantidad" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CompraResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="detalleCompra" type="tns:Compra"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

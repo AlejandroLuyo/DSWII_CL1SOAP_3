@@ -24,7 +24,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="monto" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="anio" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,27 +35,27 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "monto"
+    "anio"
 })
-@XmlRootElement(name = "PrestamoRequest")
-public class PrestamoRequest {
+@XmlRootElement(name = "AnioRequest")
+public class AnioRequest {
 
-    protected double monto;
+    protected int anio;
 
     /**
-     * Obtiene el valor de la propiedad monto.
+     * Obtiene el valor de la propiedad anio.
      * 
      */
-    public double getMonto() {
-        return monto;
+    public int getAnio() {
+        return anio;
     }
 
     /**
-     * Define el valor de la propiedad monto.
+     * Define el valor de la propiedad anio.
      * 
      */
-    public void setMonto(double value) {
-        this.monto = value;
+    public void setAnio(int value) {
+        this.anio = value;
     }
 
 }

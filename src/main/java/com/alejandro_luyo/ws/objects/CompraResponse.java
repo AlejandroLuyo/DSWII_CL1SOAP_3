@@ -10,6 +10,7 @@ package com.alejandro_luyo.ws.objects;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -24,7 +25,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="monto" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="detalleCompra" type="{http://www.alejandro-luyo.com/ws/objects}Compra"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,27 +36,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "monto"
+    "detalleCompra"
 })
-@XmlRootElement(name = "PrestamoRequest")
-public class PrestamoRequest {
+@XmlRootElement(name = "CompraResponse")
+public class CompraResponse {
 
-    protected double monto;
+    @XmlElement(required = true)
+    protected Compra detalleCompra;
 
     /**
-     * Obtiene el valor de la propiedad monto.
+     * Obtiene el valor de la propiedad detalleCompra.
      * 
+     * @return
+     *     possible object is
+     *     {@link Compra }
+     *     
      */
-    public double getMonto() {
-        return monto;
+    public Compra getDetalleCompra() {
+        return detalleCompra;
     }
 
     /**
-     * Define el valor de la propiedad monto.
+     * Define el valor de la propiedad detalleCompra.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link Compra }
+     *     
      */
-    public void setMonto(double value) {
-        this.monto = value;
+    public void setDetalleCompra(Compra value) {
+        this.detalleCompra = value;
     }
 
 }

@@ -70,6 +70,10 @@
 				<configuration>
 					<sources>
 						<source>${project.basedir}/src/main/resources/xsd/prestamo.xsd</source>
+						<source>${project.basedir}/src/main/resources/xsd/numero.xsd</source>
+						<source>${project.basedir}/src/main/resources/xsd/resultado.xsd</source>
+						<source>${project.basedir}/src/main/resources/xsd/compra.xsd</source>
+						<source>${project.basedir}/src/main/resources/xsd/anio.xsd</source>
 					</sources>
 					<outputDirectory>src/main/java</outputDirectory>
 					<clearOutputDir>false</clearOutputDir>

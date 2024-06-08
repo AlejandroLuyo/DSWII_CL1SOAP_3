@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.06.08 a las 05:13:50 PM COT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.alejandro-luyo.com/ws/objects">
+    <schemaBindings map="false">
+      <package name="com.alejandro_luyo.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:CompraRequest">
+      <class ref="com.alejandro_luyo.ws.objects.CompraRequest"/>
+    </bindings>
+    <bindings scd="tns:CompraResponse">
+      <class ref="com.alejandro_luyo.ws.objects.CompraResponse"/>
+    </bindings>
+    <bindings scd="~tns:Compra">
+      <class ref="com.alejandro_luyo.ws.objects.Compra"/>
+    </bindings>
+    <bindings scd="tns:NumeroRequest">
+      <class ref="com.alejandro_luyo.ws.objects.NumeroRequest"/>
+    </bindings>
+    <bindings scd="tns:NumeroResponse">
+      <class ref="com.alejandro_luyo.ws.objects.NumeroResponse"/>
+    </bindings>
+    <bindings scd="tns:PrestamoRequest">
+      <class ref="com.alejandro_luyo.ws.objects.PrestamoRequest"/>
+    </bindings>
+    <bindings scd="tns:PrestamoResponse">
+      <class ref="com.alejandro_luyo.ws.objects.PrestamoResponse"/>
+    </bindings>
+    <bindings scd="tns:CalculoRequest">
+      <class ref="com.alejandro_luyo.ws.objects.CalculoRequest"/>
+    </bindings>
+    <bindings scd="tns:CalculoResponse">
+      <class ref="com.alejandro_luyo.ws.objects.CalculoResponse"/>
+    </bindings>
+    <bindings scd="~tns:Resultado">
+      <class ref="com.alejandro_luyo.ws.objects.Resultado"/>
+    </bindings>
+    <bindings scd="~tns:Numero">
+      <class ref="com.alejandro_luyo.ws.objects.Numero"/>
+    </bindings>
+    <bindings scd="~tns:Prestamo">
+      <class ref="com.alejandro_luyo.ws.objects.Prestamo"/>
+    </bindings>
+  </bindings>
+</bindings>
+

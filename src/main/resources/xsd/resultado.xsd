@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.alejandro-luyo.com/ws/objects"
+           targetNamespace="http://www.alejandro-luyo.com/ws/objects"
+           elementFormDefault="qualified">
+    <xs:complexType name="Resultado">
+        <xs:sequence>
+            <xs:element name="numero" type="xs:int"/>
+            <xs:element name="cubo" type="xs:double"/>
+            <xs:element name="cuarta" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="CalculoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="limite" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CalculoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultados" type="tns:Resultado" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

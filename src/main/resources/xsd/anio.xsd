@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.alejandro-luyo.com/ws/objects"
+           targetNamespace="http://www.alejandro-luyo.com/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="Anio">
+        <xs:sequence>
+            <xs:element name="anio" type="xs:int"/>
+            <xs:element name="bisiesto" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="AnioRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="anio" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="AnioResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="bisiesto" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

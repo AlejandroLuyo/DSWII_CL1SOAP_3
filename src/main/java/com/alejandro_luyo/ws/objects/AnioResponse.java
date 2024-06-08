@@ -10,6 +10,7 @@ package com.alejandro_luyo.ws.objects;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -24,7 +25,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="monto" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="bisiesto" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,27 +36,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "monto"
+    "bisiesto"
 })
-@XmlRootElement(name = "PrestamoRequest")
-public class PrestamoRequest {
+@XmlRootElement(name = "AnioResponse")
+public class AnioResponse {
 
-    protected double monto;
+    @XmlElement(required = true)
+    protected String bisiesto;
 
     /**
-     * Obtiene el valor de la propiedad monto.
+     * Obtiene el valor de la propiedad bisiesto.
      * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public double getMonto() {
-        return monto;
+    public String getBisiesto() {
+        return bisiesto;
     }
 
     /**
-     * Define el valor de la propiedad monto.
+     * Define el valor de la propiedad bisiesto.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public void setMonto(double value) {
-        this.monto = value;
+    public void setBisiesto(String value) {
+        this.bisiesto = value;
     }
 
 }
