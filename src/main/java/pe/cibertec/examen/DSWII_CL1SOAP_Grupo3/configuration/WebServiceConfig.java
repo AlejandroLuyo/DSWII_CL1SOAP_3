@@ -98,4 +98,18 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     public XsdSchema anioSchema() {
         return new SimpleXsdSchema(new ClassPathResource("xsd/anio.xsd"));
     }
+
+    @Bean(name = "personajes")
+    public DefaultWsdl11Definition personajeWsdl11Definition(XsdSchema personajeSchema){
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("PersonajesPort");
+        wsdl11Definition.setLocationUri("/ws/personajes");
+        wsdl11Definition.setTargetNamespace("http://www.alejandro-luyo.com/ws/objects");
+        wsdl11Definition.setSchema(personajeSchema);
+        return wsdl11Definition;
+    }
+    @Bean
+    public XsdSchema personajeSchema(){
+        return new SimpleXsdSchema(new ClassPathResource("xsd/personaje.xsd"));
+    }
 }

@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -26,7 +27,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="resultados" type="{http://www.alejandro-luyo.com/ws/objects}Resultado" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="personajes" type="{http://www.alejandro-luyo.com/ws/objects}personajews" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -37,40 +38,41 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "resultados"
+    "personajes"
 })
-@XmlRootElement(name = "CalculoResponse")
-public class CalculoResponse {
+@XmlRootElement(name = "getPersonajesResponse")
+public class GetPersonajesResponse {
 
-    protected List<Resultado> resultados;
+    @XmlElement(required = true)
+    protected List<Personajews> personajes;
 
     /**
-     * Gets the value of the resultados property.
+     * Gets the value of the personajes property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the resultados property.
+     * This is why there is not a <CODE>set</CODE> method for the personajes property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getResultados().add(newItem);
+     *    getPersonajes().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Resultado }
+     * {@link Personajews }
      * 
      * 
      */
-    public List<Resultado> getResultados() {
-        if (resultados == null) {
-            resultados = new ArrayList<Resultado>();
+    public List<Personajews> getPersonajes() {
+        if (personajes == null) {
+            personajes = new ArrayList<Personajews>();
         }
-        return this.resultados;
+        return this.personajes;
     }
 
 }

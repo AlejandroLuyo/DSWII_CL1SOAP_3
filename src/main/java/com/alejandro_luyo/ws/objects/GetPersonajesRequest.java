@@ -10,7 +10,6 @@ package com.alejandro_luyo.ws.objects;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -25,7 +24,6 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="vocal" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,37 +33,9 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "vocal"
-})
-@XmlRootElement(name = "NumeroResponse")
-public class NumeroResponse {
+@XmlType(name = "")
+@XmlRootElement(name = "getPersonajesRequest")
+public class GetPersonajesRequest {
 
-    @XmlElement(required = true)
-    protected String vocal;
-
-    /**
-     * Obtiene el valor de la propiedad vocal.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getVocal() {
-        return vocal;
-    }
-
-    /**
-     * Define el valor de la propiedad vocal.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setVocal(String value) {
-        this.vocal = value;
-    }
 
 }
